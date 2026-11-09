@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JC Wheels | Premium Wheels & Tires in Miami — Trucks, Cars & SUVs</title>
+    <meta name="description" content="JC Wheels — your #1 wheel and tire shop in Miami. Premium rims, professional mounting, and expert fitment for trucks, cars and SUVs. 4.9★ rated. Call (786) 881-6042.">
+    <meta name="keywords" content="wheels Miami, rims Miami, tire shop Opa-locka, truck wheels, aftermarket rims, wheel mounting, Nitto tires, custom wheels Miami">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="JC Wheels — Premium Wheels & Tires in Miami">
+    <meta property="og:description" content="Your #1 wheel and tire shop in Miami. Premium rims, professional mounting, expert fitment. 4.9★ on Google. Call (786) 881-6042.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#0A0A0A">
+    <!-- Preload critical assets -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="images/logo-transparent.png" as="image">
+    <link rel="preload" href="images/hero-video.mp4" as="video" type="video/mp4">
+    <!-- DNS prefetch for fonts -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonts with display=swap for instant text render -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Defer JS -->
+    <script src="script.js" defer></script>
+    <!-- Critical inline CSS for instant first paint -->
+    <style>
+        body{margin:0;background:#0A0A0A;color:#A3A3A3;font-family:'Inter',sans-serif}
+        .hero{min-height:90vh;display:flex;align-items:center;position:relative;overflow:hidden}
+        .hero-video-bg{position:absolute;inset:0;z-index:0}
+        .hero-video-bg video{position:absolute;top:50%;left:50%;min-width:100%;min-height:100%;transform:translate(-50%,-50%);object-fit:cover}
+        .hero-video-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,.82),rgba(0,0,0,.55),rgba(0,0,0,.35));z-index:1}
+        .hero-video-fade{position:absolute;bottom:0;left:0;right:0;height:200px;background:linear-gradient(to bottom,transparent,rgba(10,10,10,.4) 30%,rgba(10,10,10,.75) 60%,#0a0a0a);z-index:2}
+    </style>
+</head>
+<body>
+
+    <!-- ============ TOP BAR ============ -->
+    <div class="top-bar" id="topBar">
+        <div class="top-bar-content">
+            <div class="top-bar-timer">
+                <span class="timer-box" id="timerHours">03</span>:
+                <span class="timer-box" id="timerMinutes">45</span>:
+                <span class="timer-box" id="timerSeconds">00</span>
+            </div>
+            <p class="top-bar-text">This week — <strong>free balancing</strong> with every wheel purchase. <a href="tel:+17868816042" class="top-bar-link">Call now</a></p>
+        </div>
+    </div>
+
+    <!-- ============ NAVIGATION ============ -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-inner">
+            <a href="#" class="logo" aria-label="JC Wheels Home">
+                <img src="images/logo-transparent.png" alt="JC Wheels" class="logo-img">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#process">How It Works</a></li>
+                <li><a href="#showroom">Showroom</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact" class="nav-cta-mobile">Get a Quote</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="tel:+17868816042" class="nav-phone">
+                    <span class="nav-phone-number">(786) 881-6042</span>
+                </a>
+                <a href="#contact" class="btn btn-primary nav-cta">Get a Quote</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+        <div class="hero-video-bg">
+            <video autoplay muted loop playsinline preload="metadata" id="heroVideo">
+                <source src="images/hero-video.mp4" type="video/mp4">
+            </video>
+            <div class="hero-video-overlay"></div>
+            <div class="hero-video-fade"></div>
+        </div>
+        <div class="container hero-inner">
+            <div class="hero-content animate-on-scroll">
+                <h1 class="hero-title">The wheels your ride <em>deserves</em></h1>
+                <p class="hero-description">Premium aftermarket wheels and tires for trucks, cars, and SUVs. Professional mounting, balancing, and expert fitment — all under one roof in Miami.</p>
+                <ul class="hero-features">
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#E11D48"/><path d="M6 10L9 13L14 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Top brands: Fuel, Moto Metal, XD, Nitto & more
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#E11D48"/><path d="M6 10L9 13L14 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Same-day mounting & balancing available
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#E11D48"/><path d="M6 10L9 13L14 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Financing options — ride now, pay later
+                    </li>
+                </ul>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary btn-lg">Get a Free Quote</a>
+                    <a href="tel:+17868816042" class="btn btn-outline btn-lg">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        Call Us
+                    </a>
+                </div>
+                <div class="hero-trust">
+                    <span>We accept:</span>
+                    <span class="trust-badge">Cash</span>
+                    <span class="trust-badge">Zelle</span>
+                    <span class="trust-badge">Financing</span>
+                    <span class="trust-badge">Visa/MC</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ WHY PROFESSIONAL WHEELS ============ -->
+    <section class="problems" id="problems">
+        <div class="container">
+            <h2 class="section-title section-title-light animate-on-scroll">The risk of buying wheels from random sellers</h2>
+            <p class="section-subtitle section-subtitle-light animate-on-scroll">Cheap wheels and amateur installs cost you more in the long run. Here's why it matters.</p>
+            <div class="problems-grid">
+                <div class="problem-card animate-on-scroll">
+                    <div class="problem-icon">
+                        <svg width="36" height="36" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="16" stroke="#737373" stroke-width="2"/><path d="M20 12V22L26 25" stroke="#E11D48" stroke-width="2.5" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3>Wrong fitment = damage</h3>
+                    <p>Wrong bolt pattern, offset, or hub bore can damage your suspension, brakes, and wheel bearings. We check every spec before anything goes on your vehicle.</p>
+                </div>
+                <div class="problem-card animate-on-scroll">
+                    <div class="problem-icon">
+                        <svg width="36" height="36" viewBox="0 0 40 40" fill="none"><path d="M6 34L20 6L34 34H6Z" stroke="#737373" stroke-width="2.5" stroke-linejoin="round"/><path d="M20 16V24" stroke="#E11D48" stroke-width="2.5" stroke-linecap="round"/><circle cx="20" cy="28" r="1.5" fill="#E11D48"/></svg>
+                    </div>
+                    <h3>No warranty, no returns</h3>
+                    <p>Facebook Marketplace wheels don't come with a warranty. If they crack, bend, or peel — that's on you. We only sell from brands that stand behind their product.</p>
+                </div>
+                <div class="problem-card animate-on-scroll">
+                    <div class="problem-icon">
+                        <svg width="36" height="36" viewBox="0 0 40 40" fill="none"><rect x="6" y="6" width="28" height="28" rx="4" stroke="#737373" stroke-width="2.5"/><path d="M14 14L26 26M26 14L14 26" stroke="#E11D48" stroke-width="2.5" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3>Bad install = vibrations</h3>
+                    <p>Wheels that aren't properly balanced or torqued cause vibrations, uneven tire wear, and can even come loose. Our team uses professional equipment on every job.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ 3-STEP PROCESS ============ -->
+    <section class="process" id="process">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">How it works</h2>
+            <p class="section-subtitle animate-on-scroll">Three steps. You pick the look, we handle the rest.</p>
+            <div class="process-grid">
+                <div class="process-card animate-on-scroll">
+                    <span class="process-number">01</span>
+                    <h3>Choose your wheels</h3>
+                    <p>Come by the shop or send us a message with your vehicle info. We'll help you find the right style, size, and brand for your ride and your budget.</p>
+                </div>
+                <div class="process-card animate-on-scroll">
+                    <span class="process-number">02</span>
+                    <h3>We check the fitment</h3>
+                    <p>We verify bolt pattern, offset, hub bore, and clearance. No guessing — every wheel is checked against your vehicle specs before we order or mount anything.</p>
+                </div>
+                <div class="process-card animate-on-scroll">
+                    <span class="process-number">03</span>
+                    <h3>Mount & roll out</h3>
+                    <p>Professional mounting, balancing, and TPMS reset included. We torque everything to spec and do a final walkthrough with you before you drive off.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">What we offer</h2>
+            <p class="section-subtitle animate-on-scroll">From individual wheels to full packages — we've got you covered.</p>
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll">
+                    <span class="service-badge service-badge-red">BEST SELLER</span>
+                    <div class="service-icon">
+                        <svg width="44" height="44" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="#E11D48" stroke-width="2.5"/><circle cx="24" cy="24" r="10" stroke="#E11D48" stroke-width="2"/><circle cx="24" cy="24" r="4" fill="#E11D48"/><line x1="24" y1="6" x2="24" y2="14" stroke="#E11D48" stroke-width="1.5"/><line x1="24" y1="34" x2="24" y2="42" stroke="#E11D48" stroke-width="1.5"/><line x1="6" y1="24" x2="14" y2="24" stroke="#E11D48" stroke-width="1.5"/><line x1="34" y1="24" x2="42" y2="24" stroke="#E11D48" stroke-width="1.5"/></svg>
+                    </div>
+                    <h3>Wheels & Rims</h3>
+                    <p>Premium aftermarket wheels from top brands — Fuel, Moto Metal, XD Series, American Force, TIS, and more. For trucks, SUVs, and cars. All sizes available.</p>
+                    <ul class="service-features">
+                        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#E11D48"/><path d="M5 8L7 10L11 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> 20", 22", 24", 26" and up</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#E11D48"/><path d="M5 8L7 10L11 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Black, chrome, milled, custom finishes</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#E11D48"/><path d="M5 8L7 10L11 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Financing available</li>
+                    </ul>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <span class="service-badge service-badge-gray">ESSENTIAL</span>
+                    <div class="service-icon">
+                        <svg width="44" height="44" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="#A3A3A3" stroke-width="2.5"/><circle cx="24" cy="24" r="8" stroke="#A3A3A3" stroke-width="2"/><path d="M24 4C35.05 4 44 12.95 44 24" stroke="#E11D48" stroke-width="3" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3>Tires</h3>
+                    <p>We carry all-terrain, mud-terrain, highway, and performance tires. Nitto, Toyo, Falken, BFGoodrich — whatever your vehicle needs, we'll find the right tire.</p>
+                    <ul class="service-features">
+                        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#E11D48"/><path d="M5 8L7 10L11 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> All-terrain & mud-terrain</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#E11D48"/><path d="M5 8L7 10L11 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Highway & performance</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#E11D48"/><path d="M5 8L7 10L11 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Wheel + tire packages</li>
+                    </ul>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <span class="service-badge service-badge-dark">PRO INSTALL</span>
+                    <div class="service-icon">
+                        <svg width="44" height="44" viewBox="0 0 48 48" fill="none"><path d="M14 34L8 28L14 22" stroke="#A3A3A3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M34 22L40 28L34 34" stroke="#A3A3A3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M28 14L20 42" stroke="#E11D48" stroke-width="2.5" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3>Mounting & Balancing</h3>
+                    <p>Already have your wheels? Bring them in. We do professional mounting, computerized balancing, TPMS sensor reset, and proper torquing on every vehicle.</p>
+                    <ul class="service-features">
+                        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#E11D48"/><path d="M5 8L7 10L11 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Computerized balancing</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#E11D48"/><path d="M5 8L7 10L11 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> TPMS sensor programming</li>
+                        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#E11D48"/><path d="M5 8L7 10L11 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Same-day service available</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SHOWROOM ============ -->
+    <section class="showroom" id="showroom">
+        <div class="container">
+            <h2 class="section-title section-title-light animate-on-scroll">Our shop</h2>
+            <p class="section-subtitle section-subtitle-light animate-on-scroll">Come by and see for yourself. We have hundreds of wheels in stock, ready to go.</p>
+            <div class="showroom-images animate-on-scroll">
+                <div class="showroom-main">
+                    <img src="images/showroom.jpg" alt="JC Wheels showroom with hundreds of wheels on display" loading="lazy">
+                </div>
+                <div class="showroom-secondary">
+                    <img src="images/rolls-royce.jpg" alt="Rolls Royce with custom wheels at JC Wheels shop" loading="lazy">
+                </div>
+            </div>
+            <div class="showroom-address animate-on-scroll">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 1C6.13 1 3 4.13 3 8C3 14 10 19 10 19C10 19 17 14 17 8C17 4.13 13.87 1 10 1Z" stroke="#E11D48" stroke-width="1.5"/><circle cx="10" cy="8" r="2.5" stroke="#E11D48" stroke-width="1.5"/></svg>
+                <span>13402 NW 38th Ct, Opa-locka, FL 33054 — <a href="https://maps.google.com/?q=13402+NW+38th+Ct+Opa-locka+FL+33054" target="_blank" rel="noopener">Get directions</a></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ABOUT JORGE ============ -->
+    <section class="about-owner" id="about">
+        <div class="container about-owner-inner">
+            <div class="about-image-wrapper animate-on-scroll">
+                <img src="images/jorge-owner.jpg" alt="Jorge — Owner of JC Wheels" class="about-image" loading="lazy">
+            </div>
+            <div class="about-content animate-on-scroll">
+                <span class="about-label">Who's behind JC Wheels?</span>
+                <h2 class="about-name">Meet Jorge</h2>
+                <p class="about-description">I've been around wheels and tires my whole life. I opened JC Wheels because I wanted to give people in Miami the same quality and service you'd get at a big dealer — but with better prices and personal attention. When you come in, you talk to me directly.</p>
+                <p class="about-quote">"I treat every customer's vehicle like it's my own. If I wouldn't put it on my truck, I won't put it on yours."</p>
+                <div class="about-stats">
+                    <div class="about-stat">
+                        <span class="stat-number">4.9★</span>
+                        <span class="stat-label">Google Rating</span>
+                    </div>
+                    <div class="about-stat">
+                        <span class="stat-number">80+</span>
+                        <span class="stat-label">5-Star Reviews</span>
+                    </div>
+                    <div class="about-stat">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">Vehicles Done</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">What our customers say</h2>
+            <p class="section-subtitle animate-on-scroll">Real reviews from real customers on Google.</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Excellent service and attention. I changed the tires on my vehicle and was very satisfied with the work. The team was friendly, professional, and very attentive. The Nitto tires are excellent quality, and Jorge, the owner, is a great guy."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar-placeholder">AB</div>
+                        <div>
+                            <span class="testimonial-name">Alejandro B.</span>
+                            <span class="testimonial-role">Google Review · 2 months ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Great customer service, very helpful and patient helping me find the right wheel and tire for my Silverado. Very professional and great clean shop. 100% satisfied, will be referring family and friends to JC Wheels."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar-placeholder">LG</div>
+                        <div>
+                            <span class="testimonial-name">Luis G.</span>
+                            <span class="testimonial-role">Google Review · 5 months ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Jorge helped me find the perfect wheels and tires for my Ram 1500. The installation team was fantastic — they did an impeccable job. If you're looking for the best prices and service, I highly recommend this shop."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar-placeholder">R</div>
+                        <div>
+                            <span class="testimonial-name">Robe</span>
+                            <span class="testimonial-role">Google Review · 6 months ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact-form-section" id="contact">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Get a free quote</h2>
+            <p class="section-subtitle animate-on-scroll">Tell us what you drive and what you want. We'll send you a price within the hour.</p>
+            <div class="contact-grid">
+                <form class="contact-form animate-on-scroll" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(786) 000-0000" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="vehicle">Your Vehicle *</label>
+                            <input type="text" id="vehicle" name="vehicle" placeholder="e.g. 2022 Silverado 1500" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">What do you need? *</label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Pick a service</option>
+                                <option value="wheels-tires">Wheels + Tires Package</option>
+                                <option value="wheels-only">Wheels Only</option>
+                                <option value="tires-only">Tires Only</option>
+                                <option value="mounting">Mounting & Balancing</option>
+                                <option value="other">Something else</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Tell us more</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Wheel size, style, budget range, anything that helps us quote you faster..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-full">Send My Quote Request</button>
+                    <p class="form-note">We'll get back to you within 1 hour during business hours.</p>
+                </form>
+                <div class="contact-info-panel animate-on-scroll">
+                    <div class="contact-info-card">
+                        <h3>Call us directly</h3>
+                        <p class="contact-card-desc">Habla español? We speak English & Spanish.</p>
+                        <a href="tel:+17868816042" class="btn btn-call btn-lg btn-full">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                            (786) 881-6042
+                        </a>
+                    </div>
+                    <div class="contact-info-card">
+                        <h3>WhatsApp us</h3>
+                        <p class="contact-card-desc">Send photos of your vehicle — we'll quote you right from chat.</p>
+                        <a href="https://wa.me/17868816042?text=Hey!%20I'm%20looking%20for%20wheels%20for%20my%20vehicle." target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg btn-full">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            WhatsApp Us
+                        </a>
+                    </div>
+                    <div class="contact-info-card contact-hours">
+                        <h3>Shop Hours</h3>
+                        <div class="hours-row"><span>Mon – Sat</span><strong>9:00 AM – 6:00 PM</strong></div>
+                        <div class="hours-row"><span>Sunday</span><strong>Closed</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Common questions</h2>
+            <p class="section-subtitle animate-on-scroll">Got questions? We've got answers.</p>
+            <div class="faq-list">
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How much do wheels cost?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="faq-answer"><p>It depends on the brand, size, and finish. A set of 4 aftermarket wheels typically starts around $800 and can go up to $4,000+ for premium forged wheels. We'll work with your budget. Come by or send us a message and we'll give you exact pricing for your vehicle.</p></div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Do you offer financing?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="faq-answer"><p>Yes! We offer financing options so you can get your wheels and tires now and pay over time. Ask us about available plans when you visit or call.</p></div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How long does installation take?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="faq-answer"><p>Mounting and balancing a full set of 4 wheels usually takes about 1–2 hours. If we have your wheels and tires in stock, you can get them same day. Custom orders take 3–7 business days.</p></div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Can I bring my own wheels?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="faq-answer"><p>Absolutely. If you already have wheels or tires, bring them in and we'll handle the mounting, balancing, and installation. We'll check fitment to make sure everything is safe before we install.</p></div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Do you work on trucks and SUVs?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="faq-answer"><p>That's our specialty! We work on Silverados, F-150s, Rams, Tacomas, Tundras, Jeeps, Tahoes, Expeditions — you name it. We also do sedans, sports cars, and everything in between.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer" id="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="images/logo-transparent.png" alt="JC Wheels" class="footer-logo-img">
+                </div>
+                <p class="footer-brand-desc">Your go-to wheel and tire shop in Miami. Premium brands, professional installation, honest prices. Serving all of Miami-Dade since day one.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/profile.php?id=61573768691087" target="_blank" rel="noopener" aria-label="Facebook" class="social-link"><svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h8.5v-7.5H8V10h2.5V7.5C10.5 5.57 12.07 4 14 4h2.5v2.5H14c-.55 0-1 .45-1 1V10h3.5l-.5 2.5H13V20H18c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></svg></a>
+                    <a href="https://www.instagram.com/jc__wheels/" target="_blank" rel="noopener" aria-label="Instagram" class="social-link"><svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.8c2.67 0 2.99.01 4.04.06 2.08.09 3.05 1.08 3.14 3.14.05 1.05.06 1.37.06 4.04s-.01 2.99-.06 4.04c-.09 2.05-1.06 3.04-3.14 3.14-1.05.05-1.37.06-4.04.06s-2.99-.01-4.04-.06c-2.09-.1-3.05-1.1-3.14-3.14C2.77 12.03 2.76 11.71 2.76 10s.01-2.99.06-4.04C2.91 3.88 3.88 2.9 5.96 2.8 7.01 2.76 7.33 2.76 10 2.76zM10 0C7.28 0 6.94.01 5.88.06 2.86.22.22 2.86.06 5.88.01 6.94 0 7.28 0 10s.01 3.06.06 4.12c.16 3.02 2.8 5.66 5.82 5.82C6.94 19.99 7.28 20 10 20s3.06-.01 4.12-.06c3.02-.16 5.67-2.8 5.82-5.82.05-1.06.06-1.4.06-4.12s-.01-3.06-.06-4.12c-.16-3.02-2.8-5.66-5.82-5.82C13.06.01 12.72 0 10 0zm0 4.86a5.14 5.14 0 100 10.28 5.14 5.14 0 000-10.28zm0 8.48a3.34 3.34 0 110-6.68 3.34 3.34 0 010 6.68zm5.34-8.68a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z"/></svg></a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <div class="footer-contact-item">
+                    <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="#737373" stroke-width="1.5"><path d="M9 1C5.69 1 3 3.69 3 7C3 12.25 9 17 9 17C9 17 15 12.25 15 7C15 3.69 12.31 1 9 1Z"/><circle cx="9" cy="7" r="2"/></svg>
+                    <span>13402 NW 38th Ct, Opa-locka, FL 33054</span>
+                </div>
+                <div class="footer-contact-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#737373" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    <a href="tel:+17868816042">+1 (786) 881-6042</a>
+                </div>
+            </div>
+            <div class="footer-hours">
+                <h3>Hours</h3>
+                <p><strong>Mon – Sat:</strong> 9 AM – 6 PM</p>
+                <p><strong>Sunday:</strong> Closed</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 JC Wheels. All rights reserved.</p>
+                <p class="footer-credit">Desarrollado por <a href="https://www.traccionweb.com" target="_blank" rel="noopener">traccionweb</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ FLOATING BUTTONS ============ -->
+    <div class="floating-buttons">
+        <a href="tel:+17868816042" class="float-btn call-float" aria-label="Call us">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+        </a>
+        <a href="https://wa.me/17868816042?text=Hey!%20I'm%20looking%20for%20wheels%20for%20my%20vehicle." target="_blank" rel="noopener" class="float-btn whatsapp-float" aria-label="WhatsApp">
+            <div class="float-badge">1</div>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span class="float-label">Get a Quote</span>
+        </a>
+    </div>
+
+    <!-- ============ SOCIAL PROOF ============ -->
+    <div class="social-proof" id="socialProof">
+        <div class="social-proof-inner">
+            <div class="social-proof-check">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#E11D48"/><path d="M5 8L7 10L11 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="social-proof-text">
+                <strong id="proofName">Carlos R.</strong> <span id="proofAction">just got new wheels for his Silverado</span>
+                <small id="proofTime">12 min ago</small>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
