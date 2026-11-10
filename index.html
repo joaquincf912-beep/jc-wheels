@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>JC Wheels | Premium Wheels & Tires in Miami — Trucks, Cars & SUVs</title>
     <meta name="description" content="JC Wheels — your #1 wheel and tire shop in Miami. Premium rims, professional mounting, and expert fitment for trucks, cars and SUVs. 4.9★ rated. Call (786) 881-6042.">
@@ -15,7 +15,8 @@
     <!-- Preload critical assets -->
     <link rel="preload" href="styles.css" as="style">
     <link rel="preload" href="images/logo-transparent.png" as="image">
-    <link rel="preload" href="https://github.com/joaquincf912-beep/jc-wheels/releases/download/v1.0/hero-video.mp4" as="video" type="video/mp4">
+    <!-- Mobile loads a single hero image instead of the 22 MB video -->
+    <link rel="preload" href="images/hero.jpg" as="image" media="(max-width: 767px)">
     <!-- DNS prefetch for fonts -->
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -46,7 +47,10 @@
                 <span class="timer-box" id="timerMinutes">45</span>:
                 <span class="timer-box" id="timerSeconds">00</span>
             </div>
-            <p class="top-bar-text">This week — <strong>free balancing</strong> with every wheel purchase. <a href="tel:+17868816042" class="top-bar-link">Call now</a></p>
+            <p class="top-bar-text">
+                <span class="promo-full">This week — <strong>free balancing</strong> with every wheel purchase. <a href="tel:+17868816042" class="top-bar-link">Call now</a></span>
+                <span class="promo-mobile"><strong>Free balancing</strong> this week — <a href="tel:+17868816042" class="top-bar-link">Call now</a></span>
+            </p>
         </div>
     </div>
 
@@ -70,18 +74,18 @@
                 </a>
                 <a href="#contact" class="btn btn-primary nav-cta">Get a Quote</a>
             </div>
-            <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu" aria-expanded="false" aria-controls="navLinks">
                 <span></span><span></span><span></span>
             </button>
         </div>
     </nav>
+    <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
 
     <!-- ============ HERO ============ -->
     <section class="hero" id="hero">
         <div class="hero-video-bg">
-            <video autoplay muted loop playsinline preload="metadata" id="heroVideo">
-                <source src="https://github.com/joaquincf912-beep/jc-wheels/releases/download/v1.0/hero-video.mp4" type="video/mp4">
-            </video>
+            <!-- Source is injected by script.js only on desktop / fast connections -->
+            <video muted loop playsinline preload="none" poster="images/hero.jpg" id="heroVideo" aria-hidden="true" tabindex="-1"></video>
             <div class="hero-video-overlay"></div>
             <div class="hero-video-fade"></div>
         </div>

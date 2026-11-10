@@ -20,6 +20,26 @@
     }
     if (timerH) { updateTimer(); setInterval(updateTimer, 1000); }
 
+    // ---- HERO VIDEO: desktop / fast connection only ----
+    // The video is ~22 MB, so phones keep the poster image instead.
+    const heroVideo = document.getElementById('heroVideo');
+    if (heroVideo) {
+        const conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+        const saveData = !!(conn && conn.saveData);
+        const slowNet = !!(conn && /(^|-)2g$/.test(conn.effectiveType || ''));
+        const desktop = window.matchMedia('(min-width: 768px)').matches;
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (desktop && !saveData && !slowNet && !reduceMotion) {
+            const src = document.createElement('source');
+            src.src = 'images/hero-video-web.mp4';
+            src.type = 'video/mp4';
+            heroVideo.appendChild(src);
+            heroVideo.load();
+            const play = heroVideo.play();
+            if (play && play.catch) play.catch(function() {});
+        }
+    }
+
     // ---- NAVBAR SCROLL (throttled) ----
     const navbar = document.getElementById('navbar');
     let ticking = false;
@@ -36,29 +56,52 @@
     // ---- HAMBURGER MENU ----
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('navLinks');
+    const navBackdrop = document.getElementById('navBackdrop');
+
+    function closeMenu() {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+        document.body.classList.remove('menu-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        if (navBackdrop) navBackdrop.classList.remove('active');
+    }
+
     hamburger.addEventListener('click', function() {
-        hamburger.classList.toggle('active');
-        navLinks.classList.toggle('active');
-        document.body.classList.toggle('menu-open');
+        const open = !navLinks.classList.contains('active');
+        hamburger.classList.toggle('active', open);
+        navLinks.classList.toggle('active', open);
+        document.body.classList.toggle('menu-open', open);
+        hamburger.setAttribute('aria-expanded', String(open));
+        if (navBackdrop) navBackdrop.classList.toggle('active', open);
     });
     // Close on link click
     navLinks.addEventListener('click', function(e) {
-        if (e.target.tagName === 'A') {
-            hamburger.classList.remove('active');
-            navLinks.classList.remove('active');
-            document.body.classList.remove('menu-open');
-        }
+        if (e.target.tagName === 'A') closeMenu();
+    });
+    // Close on outside tap, Escape, or when resizing up to desktop
+    if (navBackdrop) navBackdrop.addEventListener('click', closeMenu);
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeMenu();
+    });
+    window.addEventListener('resize', function() {
+        if (window.innerWidth >= 768) closeMenu();
     });
 
-    // ---- SMOOTH SCROLL ----
+    // ---- SMOOTH SCROLL (offset measured from the real fixed header) ----
+    const topBar = document.getElementById('topBar');
+    function headerOffset() {
+        const tb = topBar ? topBar.offsetHeight : 0;
+        const nb = navbar ? navbar.offsetHeight : 0;
+        return tb + nb + 8;
+    }
     document.addEventListener('click', function(e) {
         const a = e.target.closest('a[href^="#"]');
         if (!a) return;
         e.preventDefault();
         const target = document.querySelector(a.getAttribute('href'));
         if (target) {
-            const offset = 120;
-            window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
+            const top = target.getBoundingClientRect().top + window.pageYOffset - headerOffset();
+            window.scrollTo({ top: Math.max(top, 0), behavior: 'smooth' });
         }
     });
 
